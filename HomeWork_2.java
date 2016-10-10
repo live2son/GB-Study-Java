@@ -13,6 +13,7 @@ class HomeWork_2 {
         UpLowSix ();
         FindMinMax ();
         SimpleCalc ();
+
     }
 
     static int[] Arreay_example () {
@@ -50,23 +51,21 @@ class HomeWork_2 {
     }
 
     static void SimpleCalc () {
-        System.out.println("Простой калькулятор, поддерживающий операции - +,-,*,/. \n Введите первое число: ");
+        System.out.println("Простой калькулятор, поддерживающий операции - +,-,*,/. \n Введите арифметическое выражение с элеметами разделенными пробелами, пример - 1 + 1 ");
         Scanner sc = new Scanner(System.in); // создание сканера
         int a = sc.nextInt();                // чтение целого числа(int)
-        System.out.println(" Введите второе число: ");
+        String Oper = sc.next();               // чтение вида операции
         int b = sc.nextInt();                // чтение целого числа(int)
-        System.out.println(" Введите цифру желаемой операции 1 -, 2 +, 3 *, 4 / :");
-        int Oper = sc.nextInt();
         switch (Oper) {
-            case 1:  System.out.println(" Результат : " + (a-b));
+            case "-":  System.out.println(" Результат : " + (a - b));
                 break;
-            case 2:  System.out.println(" Результат : " + (a+b));
+            case "+":  System.out.println(" Результат : " + (a + b));
                 break;
-            case 3:  System.out.println(" Результат : " + (a*b));
+            case "*":  System.out.println(" Результат : " + (a * b));
                 break;
-            case 4:  System.out.println(" Результат : " + (a/b));
+            case "/":  System.out.println(" Результат : " + (a / b));
                 break;
-            default: System.out.println("Ошибка выбора операции!");
+            default:   System.out.println(" Ошибка выбора операции!");
         }
     }
 }
