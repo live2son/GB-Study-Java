@@ -46,7 +46,7 @@ class HomeWork_4{
             this.age = age;
         }
 
-        show () {
+        void show() {
             System.out.println(fio +", должность:"+ function +", email:"+ email +", tel:"+ telefon +", ЗП:"+ money +", возраст:"+ age);
         }
 
